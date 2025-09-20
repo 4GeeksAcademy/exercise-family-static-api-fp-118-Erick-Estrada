@@ -55,7 +55,7 @@ def handle_delete_member(id):
     # This is how you can use the Family datastructure by calling its methods
     member = jackson_family.delete_member(id)
     response_body = member
-    return response_body, 200
+    return jsonify({"msg" : "delete member"}), 200
 
 # This only runs if `$ python src/app.py` is executed
 if __name__ == '__main__':
